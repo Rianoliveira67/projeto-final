@@ -1,120 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>Games News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameNexus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet" />
   </head>
+
   <body>
-    <nav>
-      <h1>Game News</h1>
-      <a href="https://www.roblox.com/pt" target="_blank" class="linksHeader"
-        >Jogos</a
-      >
-      <a href="#" class="linksHeader">Noticias</a>
-      <a href="#" class="linksHeader">Eventos</a>
-      <a href="#" class="linksHeader">Códigos de Jogos</a>
-      <button type="button">Login</button>
-      <button type="button" id="botao1">Continuar</button>
-    </nav>
-    <section>
-      <!-- carrousel-->
-      <div class="jogosPrincipais">
-        <img
-          src="/imagens/01-fortnite.png"
-          alt="Fortnite"
-          width="250px"
-          height="192px"
-        />
-        <div class="jogosPrincipaisInstalar">
-          <button type="button">instalar Fortinite</button>
-        </div>
-      </div>
+    <div class="container">
 
-      <!-- noticias games -->
+      <!-- NAV -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <h1 class="brand">GameNexus</h1>
 
-      <main class="noticias-top">
-        <div id="jogos-meta">
-          <h2>Jogos do meta</h2>
-
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/02-cs2.webp"
-              alt="cs2"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar counter strike</button>
-            </div>
-          </div>
-
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/03-warframe.png"
-              alt="warframe"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar warframe</button>
-            </div>
-          </div>
+        <div class="nav-links" id="main-menu" role="menubar">
+          <a href="https://www.roblox.com/pt" target="_blank" class="linksHeader" role="menuitem">Jogos</a>
+          <a href="#" class="linksHeader is-active" aria-current="page" role="menuitem">Noticias</a>
+          <a href="#" class="linksHeader" role="menuitem">Eventos</a>
+          <a href="#" class="linksHeader" role="menuitem">Códigos de Jogos</a>
         </div>
 
-        <div id="filas-competitivas">
-          <h2>Filas competitivas</h2>
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/04-lol.webp"
-              alt="lol"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar league of legends</button>
-            </div>
+        <button id="menuToggle" class="hamburger">☰</button>
+
+        <div class="auth">
+          <button type="button" class="login">Login</button>
+          <button type="button" id="botao1" class="cta">Continuar</button>
+        </div>
+      </nav>
+
+      <!-- CARROSSEL -->
+      <section>
+        <div class="jogosPrincipais hero" aria-label="Carrossel de Destaques">
+
+          <img src="imagens/01-fortnite.png" alt="Fortnite - destaque">
+
+          <div class="jogosPrincipaisInstalar">
+            <button
+              type="button"
+              aria-label="Instalar Fortnite"
+              onclick="window.open('https://www.fortnite.com/download', '_blank')">
+              Instalar Fortnite
+            </button>
           </div>
 
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/05-valorant.jpg"
-              alt="valorant"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar valorant</button>
-            </div>
-          </div>
+          <!-- CONTROLES DO CARROSSEL -->
+          <button class="carousel-prev" aria-label="Slide anterior">‹</button>
+          <button class="carousel-next" aria-label="Próximo slide">›</button>
+
+          <ul class="carousel-indicators">
+            <li><button class="indicator active" aria-current="true"></button></li>
+            <li><button class="indicator"></button></li>
+            <li><button class="indicator"></button></li>
+            <li><button class="indicator"></button></li>
+            <li><button class="indicator"></button></li>
+          </ul>
         </div>
 
-        <div>
-          <h2>criatividade mundo aberto</h2>
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/06-roblox.webp"
-              alt="roblox"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar roblox</button>
+        <!-- CONTEÚDO -->
+        <main class="noticias-top">
+
+          <!-- JOGOS DO META -->
+          <div id="jogos-meta">
+            <h2>Jogos do meta</h2>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/02-cs2.webp" alt="CS2 - Counter Strike">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar CS2"
+                  onclick="window.open('https://store.steampowered.com/app/730/CounterStrike_2/', '_blank')">
+                  Instalar CS2
+                </button>
+              </div>
+            </div>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/03-warframe.png" alt="Warframe - destaque">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar Warframe"
+                  onclick="window.open('https://www.warframe.com/download', '_blank')">
+                  Instalar Warframe
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="jogosPrincipais">
-            <img
-              src="/imagens/07-minecraft.avif"
-              alt="07-minecraft"
-              width="250px"
-              height="192px"
-            />
-            <div class="jogosPrincipaisInstalar">
-              <button type="button">instalar 07-minecraft</button>
+          <!-- FILAS COMPETITIVAS -->
+          <div id="filas-competitivas">
+            <h2>Filas competitivas</h2>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/04-lol.webp" alt="League of Legends">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar League of Legends"
+                  onclick="window.open('https://signup.leagueoflegends.com/pt-br/signup/index', '_blank')">
+                  Instalar League
+                </button>
+              </div>
+            </div>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/05-valorant.jpg" alt="Valorant - destaque">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar Valorant"
+                  onclick="window.open('https://playvalorant.com/pt-br/download/', '_blank')">
+                  Instalar Valorant
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
-    </section>
+
+          <!-- MUNDO ABERTO -->
+          <div>
+            <h2>Criatividade mundo aberto</h2>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/06-roblox.webp" alt="Roblox - destaque">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar Roblox"
+                  onclick="window.open('https://www.roblox.com/download', '_blank')">
+                  Instalar Roblox
+                </button>
+              </div>
+            </div>
+
+            <div class="jogosPrincipais">
+              <img src="imagens/07-minecraft.avif" alt="Minecraft - destaque">
+              <div class="jogosPrincipaisInstalar">
+                <button
+                  type="button"
+                  aria-label="Instalar Minecraft"
+                  onclick="window.open('https://www.minecraft.net/pt-br/download', '_blank')">
+                  Instalar Minecraft
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <p>© GameNexus — Todos os direitos reservados</p>
+      </footer>
+
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
