@@ -28,35 +28,39 @@ Use estas variáveis no seu CSS para manter a consistência:
 
 * [ ok] **Tarefa 4:** HTML: Crie a `<nav>` com a logo (esquerda), links (centro) e botões "Login/Continuar" (direita).
 * [ok ] **Tarefa 5:** CSS: Use `display: flex` e `justify-content: space-between` para alinhar os elementos.
-* [ - +] **Tarefa 6:** Estilize o botão "Continuar" com o fundo verde neon e texto preto. Adicione um efeito de `hover` nos links.
+* [ok] **Tarefa 6:** Estilize o botão "Continuar" com o fundo verde neon e texto preto. Adicione um efeito de `hover` nos links.
 
 ### Fase 3: Hero Section (O Carrossel Central)
 
 * [ ok] **Tarefa 7:** HTML: Crie uma `<section>` para o banner do Fortnite. Use uma div para a imagem principal e divs menores para as "espiadas" laterais (Warframe).
-* [ ] **Tarefa 8:** CSS: Use `display: flex` para alinhar as imagens. A imagem central deve ter `border-radius` e uma borda sutil.
-* [ ] **Tarefa 9:** Crie os indicadores de página (os 5 pontinhos verdes) abaixo da imagem usando uma lista `<ul>` horizontal.
+* [ok] **Tarefa 8:** CSS: Use `display: flex` para alinhar as imagens. A imagem central deve ter `border-radius` e uma borda sutil.
+* [ok] **Tarefa 9:** Crie os indicadores de página (os 5 pontinhos verdes) abaixo da imagem usando uma lista `<ul>` horizontal.
 
 ### Fase 4: Grids de Conteúdo (The Meta, Competitive, etc.)
 
-* [ ] **Tarefa 10:** HTML: Crie uma estrutura para cada seção (ex: `.grid-container`). Cada seção terá um título verde e uma div com os cards.
-* [ ] **Tarefa 11:** CSS Grid: Para o Desktop, use `display: grid; grid-template-columns: repeat(3, 1fr);` para criar as três colunas principais.
-* [ ] **Tarefa 12:** Estilize o **Card**: Fundo cinza escuro, bordas arredondadas, imagem ocupando o topo e o nome do jogo no canto inferior com uma borda verde à esquerda.
+* [ok] **Tarefa 10:** HTML: Crie uma estrutura para cada seção (ex: `.grid-container`). Cada seção terá um título verde e uma div com os cards.
+* [ok] **Tarefa 11:** CSS Grid: Para o Desktop, use `display: grid; grid-template-columns: repeat(3, 1fr);` para criar as três colunas principais.
+* [ok] **Tarefa 12:** Estilize o **Card**: Fundo cinza escuro, bordas arredondadas, imagem ocupando o topo e o nome do jogo no canto inferior com uma borda verde à esquerda.
 
 ### Fase 5: Rodapé (Footer)
 
-* [ ] **Tarefa 13:** HTML: Crie o `<footer>` com 3 colunas de links, a logo à esquerda e os ícones sociais à direita.
-* [ ] **Tarefa 14:** CSS: Use `flexbox` para distribuir as colunas e estilize os links com a cor cinza médio.
+* [ok] **Tarefa 13:** HTML: Crie o `<footer>` com 3 colunas de links, a logo à esquerda e os ícones sociais à direita.
+* [ok] **Tarefa 14:** CSS: Use `flexbox` para distribuir as colunas e estilize os links com a cor cinza médio.
 
 ### Fase 6: Responsividade (Mobile Layout)
 
-* [ ] **Tarefa 15:** Media Query: Crie um `@media (max-width: 768px)`.
-* [ ] **Tarefa 16:** No mobile, mude o menu para um ícone de "Hambúrguer" (esconda os links e mostre o ícone).
-* [ ] **Tarefa 17:** Ajuste os Grids: Mude o `grid-template-columns` para `1fr` para que todos os cards fiquem empilhados verticalmente, como na imagem à direita.
+* [ok] **Tarefa 15:** Media Query: Crie um `@media (max-width: 768px)`.
+* [ok] **Tarefa 16:** No mobile, mude o menu para um ícone de "Hambúrguer" (esconda os links e mostre o ícone).
+* [ok] **Tarefa 17:** Ajuste os Grids: Mude o `grid-template-columns` para `1fr` para que todos os cards fiquem empilhados verticalmente, como na imagem à direita.
 
 ### Fase 7: JavaScript (O "Toque Final")
 
-* [ ] **Tarefa 18:** Menu Mobile: Crie uma função simples que adiciona/remove uma classe `active` para mostrar o menu ao clicar no hambúrguer.
-* [ ] **Tarefa 19:** Carrossel: (Opcional para iniciantes) Crie um script que mude a imagem principal ao clicar nos pontinhos verdes.
+* [ok] **Tarefa 18:** Menu Mobile: Crie uma função simples que adiciona/remove uma classe `active` para mostrar o menu ao clicar no hambúrguer.
+* [ok] **Tarefa 19:** Carrossel: (Opcional para iniciantes) Crie um script que mude a imagem principal ao clicar nos pontinhos verdes. (Implementado: indicadores, clique, transição, autoplay e controles prev/next)
+
+> Nota: O arquivo de estilos no projeto está nomeado como `estilo.css` (não `style.css`).
+
+> Acessibilidade: trabalho em andamento — atualizei `alt` e `aria-labels`, implementei foco visível; recomenda-se rodar Lighthouse para validar contraste e padrões de a11y.
 
 ---
 
